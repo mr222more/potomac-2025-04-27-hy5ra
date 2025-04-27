@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potomac - Frameless Shower Doors</title>
+    <meta name="description" content="Premium frameless shower doors with silent sliding mechanism. Create a spacious feel with clear glass transparency.">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="text-2xl font-bold tracking-tighter text-white hover:text-purple-400 transition-colors duration-300">
+                    Potomac
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                    <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+                </div>
+                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="relative min-h-screen flex items-center justify-center overflow-hidden py-32">
+            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-gray-900 to-gray-900"></div>
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Frameless shower doors - sleek & modern
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
+                        Experience luxury and elegance with our premium frameless shower doors
+                    </p>
+                    <a href="http://www.customeuroglass.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
+                        Explore Our Collection
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    Revolutionary Features
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                        <div class="text-purple-400 mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4M12 4v16"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Silent Sliding Mechanism</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Experience the luxury of noise-free operation with our state-of-the-art sliding mechanism
+                        </p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                        <div class="text-purple-400 mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Crystal Clear Transparency</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Premium glass that maintains perfect clarity while ensuring durability and safety
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="benefits" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    Transform Your Space
+                </h2>
+                <div class="max-w-3xl mx-auto bg-gray-800/50 rounded-2xl p-12 border border-gray-700/50">
+                    <p class="text-xl leading-relaxed text-gray-300 text-center">
+                        Creates a spacious feel with clear glass transparency, bringing modern elegance to your bathroom
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 bg-gradient-to-b from-gray-800/50 to-gray-900">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                        Ready to Transform Your Space?
+                    </h2>
+                    <p class="text-xl text-gray-300 mb-12">
+                        Contact us to discuss your project
+                    </p>
+                    <a href="mailto:ts@customeuroglass.com" class="inline-block bg-purple-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 border-t border-gray-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Potomac</h3>
+                    <p class="text-gray-400">Premium frameless shower doors for modern homes</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact</h3>
+                    <a href="mailto:ts@customeuroglass.com" class="text-gray-400 hover:text-white transition-colors duration-300">
+                        ts@customeuroglass.com
+                    </a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links</h3>
+                    <a href="http://www.customeuroglass.com" class="text-gray-400 hover:text-white transition-colors duration-300 block">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2024 Potomac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
