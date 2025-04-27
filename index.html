@@ -1,52 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Potomac - Frameless Shower Doors</title>
     <meta name="description" content="Premium frameless shower doors with silent sliding mechanism. Create a spacious feel with clear glass transparency.">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-gray-900 text-gray-100 font-sans antialiased">
-    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800" x-data="{ isOpen: false }">
+    <header class="fixed w-full z-50 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold tracking-tighter text-white hover:text-purple-400 transition-colors duration-300">
+                <a href="https://mr222more.github.io/potomac-2025-04-27-hy5ra" class="text-2xl font-bold tracking-tighter text-white hover:text-purple-400 transition-colors duration-300">
                     Potomac
                 </a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#features" class="text-gray-300 hover:text-white transition-colors duration-300">Features</a>
                     <a href="#benefits" class="text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
+                    <a href="#testimonials" class="text-gray-300 hover:text-white transition-colors duration-300">Testimonials</a>
+                    <a href="#about" class="text-gray-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="#faq" class="text-gray-300 hover:text-white transition-colors duration-300">FAQ</a>
                     <a href="#contact" class="text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
                 </div>
-                <button @click="isOpen = !isOpen" class="md:hidden text-gray-300 hover:text-white">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars text-2xl text-gray-300 hover:text-white transition-colors duration-300"></i>
                 </button>
             </div>
-            <div x-show="isOpen" class="md:hidden mt-4 space-y-4">
-                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300">Features</a>
-                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300">Benefits</a>
-                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300">Contact</a>
+            <div class="mobile-menu hidden md:hidden mt-4 space-y-4">
+                <a href="#features" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Features</a>
+                <a href="#benefits" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Benefits</a>
+                <a href="#testimonials" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Testimonials</a>
+                <a href="#about" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">About</a>
+                <a href="#faq" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">FAQ</a>
+                <a href="#contact" class="block text-gray-300 hover:text-white transition-colors duration-300 py-2">Contact</a>
             </div>
         </nav>
     </header>
 
     <main>
         <section class="relative min-h-screen flex items-center justify-center overflow-hidden py-32">
-            <div class="absolute inset-0 bg-gradient-to-br from-purple-900/40 via-gray-900 to-gray-900"></div>
+            <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80')] bg-cover bg-center">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-900/80 via-gray-900/90 to-gray-900/95"></div>
+            </div>
             <div class="container mx-auto px-6 relative z-10">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        Frameless shower doors - sleek & modern
+                        Transform Your Bathroom Into a Luxury Retreat
                     </h1>
                     <p class="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed">
-                        Experience luxury and elegance with our premium frameless shower doors
+                        Experience the perfect blend of elegance and functionality with our premium frameless shower doors. Engineered for silent operation and timeless beauty.
                     </p>
                     <a href="http://www.customeuroglass.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                        Explore Our Collection
+                        Start Your Transformation Today
                     </a>
                 </div>
             </div>
@@ -57,27 +72,38 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                     Revolutionary Features
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10">
                         <div class="text-purple-400 mb-6">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4M12 4v16"/>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Silent Sliding Mechanism</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Whisper-Quiet Operation</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Experience the luxury of noise-free operation with our state-of-the-art sliding mechanism
+                            Our patented sliding mechanism ensures completely silent operation, using advanced bearings and cushioned stops for a premium experience every time.
                         </p>
                     </div>
-                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10">
                         <div class="text-purple-400 mb-6">
                             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
                             </svg>
                         </div>
-                        <h3 class="text-2xl font-semibold mb-4">Crystal Clear Transparency</h3>
+                        <h3 class="text-2xl font-semibold mb-4">Ultra-Clear Glass</h3>
                         <p class="text-gray-400 leading-relaxed">
-                            Premium glass that maintains perfect clarity while ensuring durability and safety
+                            10mm tempered safety glass with exceptional clarity and durability. Treated with our proprietary coating for easy cleaning and lasting brilliance.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/10">
+                        <div class="text-purple-400 mb-6">
+                            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-semibold mb-4">Premium Hardware</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Precision-engineered stainless steel components designed for smooth operation and lasting durability, backed by our lifetime warranty.
                         </p>
                     </div>
                 </div>
@@ -89,10 +115,123 @@
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
                     Transform Your Space
                 </h2>
-                <div class="max-w-3xl mx-auto bg-gray-800/50 rounded-2xl p-12 border border-gray-700/50">
-                    <p class="text-xl leading-relaxed text-gray-300 text-center">
-                        Creates a spacious feel with clear glass transparency, bringing modern elegance to your bathroom
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                        <h3 class="text-2xl font-semibold mb-4">Enhanced Spaciousness</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Our frameless design creates an open, airy feeling that makes your bathroom appear larger and more luxurious. Perfect for both compact and spacious layouts.
+                        </p>
+                    </div>
+                    <div class="bg-gray-800/50 rounded-2xl p-8 transform hover:scale-[1.02] transition-all duration-300 border border-gray-700/50 hover:border-purple-500/50">
+                        <h3 class="text-2xl font-semibold mb-4">Easy Maintenance</h3>
+                        <p class="text-gray-400 leading-relaxed">
+                            Our specialized glass treatment repels water, soap scum, and mineral deposits, making cleaning effortless and maintaining that showroom-fresh look for years.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    What Our Clients Say
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900/50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"The silent sliding mechanism is incredible. We can't believe how smooth and quiet it is. Installation was perfect, and the glass quality is outstanding."</p>
+                        <p class="font-semibold">Sarah Johnson</p>
+                        <p class="text-sm text-gray-400">Interior Designer, DC Metro Area</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Transformed our master bathroom completely. The frameless design makes the space feel twice as large. Cleaning is a breeze with their special glass treatment."</p>
+                        <p class="font-semibold">Michael Chen</p>
+                        <p class="text-sm text-gray-400">Homeowner, Arlington</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Professional installation and exceptional customer service. The quality of materials and craftsmanship is evident in every detail."</p>
+                        <p class="font-semibold">Robert Martinez</p>
+                        <p class="text-sm text-gray-400">Property Developer</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                        <div class="flex text-yellow-400 mb-4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="text-gray-300 mb-4">"Worth every penny! The clarity of the glass and the smooth operation of the door exceed our expectations. Our bathroom feels like a luxury spa now."</p>
+                        <p class="font-semibold">Emily Thompson</p>
+                        <p class="text-sm text-gray-400">Luxury Home Builder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-24">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    About Potomac
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <p class="text-gray-300 leading-relaxed">
+                        Founded in 2010, Potomac emerged from a vision to revolutionize bathroom design through innovative shower solutions. Our journey began when our founders, experienced glass craftsmen, recognized the need for premium quality frameless shower doors that combined functionality with elegant design.
                     </p>
+                    <p class="text-gray-300 leading-relaxed">
+                        Our mission is to transform everyday bathrooms into luxurious retreats through exceptional craftsmanship and innovative design. We believe in creating products that not only meet but exceed our customers' expectations, while maintaining our core values of quality, innovation, and customer satisfaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-24 bg-gray-800/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
+                    Frequently Asked Questions
+                </h2>
+                <div class="max-w-3xl mx-auto space-y-8">
+                    <div class="bg-gray-900/50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How long does installation take?</h3>
+                        <p class="text-gray-400">Professional installation typically takes 2-4 hours, depending on the complexity of your space. Our experienced team ensures minimal disruption to your home.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What warranty do you offer?</h3>
+                        <p class="text-gray-400">We provide a comprehensive lifetime warranty on all hardware and a 10-year warranty on glass and treatments, covering any manufacturing defects.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">How do I clean and maintain the glass?</h3>
+                        <p class="text-gray-400">Our special coating makes cleaning simple - just use a squeegee after showering and occasional mild glass cleaner. No harsh chemicals required.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">What types of glass options are available?</h3>
+                        <p class="text-gray-400">We offer clear, frosted, and various textured glass options in 3/8" and 1/2" thickness, all tempered for safety and durability.</p>
+                    </div>
+                    <div class="bg-gray-900/50 p-6 rounded-lg hover:shadow-lg transition-all duration-300">
+                        <h3 class="text-xl font-semibold mb-4">Do you offer custom sizes?</h3>
+                        <p class="text-gray-400">Yes, all our shower doors are custom-made to your exact specifications, ensuring a perfect fit for any space.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -101,13 +240,13 @@
             <div class="container mx-auto px-6">
                 <div class="max-w-4xl mx-auto text-center">
                     <h2 class="text-3xl md:text-4xl font-bold mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
-                        Ready to Transform Your Space?
+                        Ready to Transform Your Bathroom?
                     </h2>
                     <p class="text-xl text-gray-300 mb-12">
-                        Contact us to discuss your project
+                        Contact us today for a free consultation and quote. Our experts are ready to help you create your perfect space.
                     </p>
                     <a href="mailto:ts@customeuroglass.com" class="inline-block bg-purple-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">
-                        Get in Touch
+                        Schedule Your Consultation
                     </a>
                 </div>
             </div>
@@ -116,7 +255,7 @@
 
     <footer class="bg-gray-900 border-t border-gray-800 py-12">
         <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
                 <div>
                     <h3 class="text-xl font-bold mb-4">Potomac</h3>
                     <p class="text-gray-400">Premium frameless shower doors for modern homes</p>
@@ -129,9 +268,13 @@
                 </div>
                 <div>
                     <h3 class="text-xl font-bold mb-4">Links</h3>
-                    <a href="http://www.customeuroglass.com" class="text-gray-400 hover:text-white transition-colors duration-300 block">
-                        Website
-                    </a>
+                    <a href="http://www.customeuroglass.com" class="text-gray-400 hover:text-white transition-colors duration-300 block">Website</a>
+                    <a href="https://mr222more.github.io/potomac-2025-04-27-hy5ra/blog.html" class="text-gray-400 hover:text-white transition-colors duration-300 block">Blog</a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <a href="https://mr222more.github.io/potomac-2025-04-27-hy5ra/privacy.html" class="text-gray-400 hover:text-white transition-colors duration-300 block">Privacy Policy</a>
+                    <a href="https://mr222more.github.io/potomac-2025-04-27-hy5ra/terms.html" class="text-gray-400 hover:text-white transition-colors duration-300 block">Terms of Service</a>
                 </div>
             </div>
             <div class="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
@@ -139,5 +282,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
